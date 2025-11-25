@@ -4,22 +4,7 @@
   <meta charset="UTF-8">
   <title>Les Comores - Histoire</title>
   <link rel="icon" type="image/png" href="images/drapeau.png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-    body { font-family:'Poppins',sans-serif; margin:0; background:#fdfdfd; color:#333; }
-    header { background:linear-gradient(to right,#004d40,#00796b); color:white; padding:20px; text-align:center; }
-    nav ul { list-style:none; margin:0; padding:0; }
-    nav ul li { display:inline-block; margin:0 15px; }
-    nav ul li a { color:white; text-decoration:none; font-weight:600; transition:color 0.3s; }
-    nav ul li a:hover { color:#ffcc00; }
-    nav ul li.active a { border-bottom:2px solid #ffcc00; }
-    .banner { width:100%; height:300px; background:url('images/independance.png') center/cover no-repeat; }
-    main { max-width:1000px; margin:auto; padding:40px; line-height:1.6; }
-    h2 { color:#004d40; margin-bottom:20px; }
-    img { max-width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2); transition:transform 0.3s; }
-    img:hover { transform:scale(1.05); }
-    footer { background:#2c2c2c; color:white; text-align:center; padding:15px; margin-top:40px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -33,12 +18,12 @@
     </nav>
   </header>
 
-  <div class="banner"></div>
+  <div class="banner" style="background-image:url('images/independance.png');"></div>
 
   <main>
     <h2>Origines et influences</h2>
-    <p>Situées entre Madagascar et la côte africaine, les Comores ont longtemps été un carrefour de civilisations.</p>
-    <img src="images/Carte-ancienne.png" alt="Ancienne carte des Comores" title="Carte ancienne des Comores" width="200">
+    <p>Situées en Afrique, à l'entrée du canal du Mozambique, au Nord-Ouest de Madagascar, les Comores ont longtemps été un carrefour de civilisations.</p>
+    <img src="images/Carte-ancienne.png" alt="Ancienne carte des Comores" title="Carte ancienne des Comores">
 
     <h2>Colonisation française</h2>
     <p>Au XIXe siècle, les Comores passent progressivement sous contrôle français.</p>
@@ -47,10 +32,17 @@
     <h2>Vers l’indépendance</h2>
     <p>Le 6 juillet 1975, les Comores proclament leur souveraineté, à l’exception de Mayotte restée française.</p>
     <img src="images/independance.png" alt="Manifestation pour l’indépendance" title="Indépendance des Comores">
+
+    <!-- Frise chronologique -->
+    <div class="timeline">
+      <div><h3>XVIIe siècle</h3><p>Arrivée des commerçants arabes et perses.</p></div>
+      <div><h3>1841</h3><p>Début de la colonisation française.</p></div>
+      <div><h3>1975</h3><p>Indépendance proclamée.</p></div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Réalisé par le maître </p>
+    <p>&copy; 2025 - Réalisé par Sayfi</p>
   </footer>
 </body>
 </html>

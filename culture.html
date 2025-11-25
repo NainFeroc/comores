@@ -4,24 +4,7 @@
   <meta charset="UTF-8">
   <title>Les Comores - Culture</title>
   <link rel="icon" type="image/png" href="images/drapeau.png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-    body { font-family:'Poppins',sans-serif; margin:0; background:#fdfdfd; color:#333; }
-    header { background:linear-gradient(to right,#004d40,#00796b); color:white; padding:20px; text-align:center; }
-    nav ul { list-style:none; margin:0; padding:0; }
-    nav ul li { display:inline-block; margin:0 15px; }
-    nav ul li a { color:white; text-decoration:none; font-weight:600; transition:color 0.3s; }
-    nav ul li a:hover { color:#ffcc00; }
-    nav ul li.active a { border-bottom:2px solid #ffcc00; }
-    .banner { width:100%; height:300px; background:url('images/mariage.png') center/cover no-repeat; }
-    main { max-width:1000px; margin:auto; padding:40px; line-height:1.6; }
-    h2 { color:#004d40; margin-bottom:20px; }
-    img { max-width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2); transition:transform 0.3s; }
-    img:hover { transform:scale(1.05); }
-    figure { text-align:center; margin:20px auto; }
-    figcaption { font-size:0.9em; color:#555; margin-top:5px; }
-    footer { background:#2c2c2c; color:white; text-align:center; padding:15px; margin-top:40px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -35,43 +18,43 @@
     </nav>
   </header>
 
-  <div class="banner"></div>
+  <div class="banner" style="background-image:url('images/mariage.png');"></div>
 
   <main>
-    <section>
-      <h2>Traditions et cérémonies</h2>
-      <p>Les mariages comoriens, notamment le <strong>Anda</strong>, sont réputés pour leur faste et leur importance sociale. Ils représentent un moment de prestige et de solidarité communautaire.</p>
-      <figure>
-        <img src="images/mariage.png" alt="Tenues de mariage traditionnel Anda" title="Mariage Anda">
-        <figcaption>Tenues traditionnelles lors d’un mariage Anda</figcaption>
-      </figure>
-    </section>
+    <h2>Traditions et cérémonies</h2>
+    <p>Les mariages comoriens, notamment le <strong>Anda</strong>, sont réputés pour leur faste et leur importance sociale. 
+    Ils représentent un moment de prestige et de solidarité communautaire.</p>
+    <img src="images/mariage.png" alt="Tenues de mariage traditionnel Anda" title="Mariage Anda">
 
-    <section>
-      <h2>Gastronomie comorienne</h2>
-      <p>La cuisine comorienne est riche en saveurs. Le <strong>pilao</strong>, plat de riz épicé, est incontournable. Les <strong>samboussa</strong>, petits triangles frits farcis, sont très populaires lors des fêtes.</p>
-      <figure>
-        <img src="images/pilao.png" alt="Plat de pilao" title="Pilao comorien">
-        <figcaption>Le pilao, plat emblématique</figcaption>
-      </figure>
-      <figure>
-        <img src="images/samboussa.png" alt="Samboussa comorien" title="Samboussa">
-        <figcaption>Samboussa servis en apéritif</figcaption>
-      </figure>
-    </section>
+    <h2>Gastronomie comorienne</h2>
+    <p>La cuisine comorienne est riche en saveurs. Le <strong>pilao</strong> est incontournable. 
+    Les <strong>samboussa</strong> sont très populaires lors des fêtes.</p>
 
-    <section>
-      <h2>Nature et paysages</h2>
-      <p>Le volcan <strong>Karthala</strong>, situé sur l’île de Grande Comore, est l’un des plus grands volcans actifs du monde. Il domine les paysages et attire les randonneurs.</p>
-      <figure>
-        <img src="images/Karthala.png" alt="Volcan Karthala" title="Volcan Karthala">
-        <figcaption>Le majestueux volcan Karthala</figcaption>
-      </figure>
-    </section>
+    <!-- Galerie gastronomique -->
+    <div class="gallery">
+      <img src="images/pilao.png" alt="Plat de pilao" title="Pilao comorien">
+      <img src="images/samboussa.png" alt="Samboussa comorien" title="Samboussa">
+      <img src="images/mariage.png" alt="Mariage Anda" title="Mariage Anda">
+    </div>
+
+    <h2>Nature et paysages</h2>
+    <p>Le volcan <strong>Karthala</strong>, situé sur l’île de Grande Comore, est l’un des plus grands volcans actifs du monde. 
+    Il domine les paysages et attire les randonneurs.</p>
+    <img src="images/Karthala.png" alt="Volcan Karthala" title="Volcan Karthala">
+
+    <h2>Développement durable</h2>
+    <p>Les Comores, archipel fragile au cœur de l’océan Indien, ont engagé plusieurs actions pour protéger leur environnement et assurer un avenir durable :</p>
+    <ul>
+      <li><strong>Gestion des déchets :</strong> avec l’appui du PNUD et du Fonds pour l’Environnement Mondial, le pays développe des plans intercommunaux pour une gestion plus structurée et inclusive des déchets.</li>
+      <li><strong>Économie bleue :</strong> le Plan Comores Émergent 2030 mise sur la mer comme moteur de croissance, en valorisant la pêche et le tourisme durable.</li>
+      <li><strong>Restauration des écosystèmes :</strong> l’ONG Dahari agit pour régénérer les forêts, les rivières et les récifs coralliens, essentiels à la biodiversité et à la résilience des communautés.</li>
+      <li><strong>Adaptation climatique :</strong> les Comores actualisent régulièrement leur plan national pour réduire les émissions et renforcer l’adaptation face aux impacts du changement climatique.</li>
+    </ul>
+    <p>Ces initiatives montrent que la culture comorienne ne se limite pas aux traditions et à la gastronomie, mais intègre aussi une conscience écologique et une volonté de préserver les ressources naturelles pour les générations futures.</p>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Réalisé par Sayfi</p>
+    <p>&copy; 2025 - Réalisé par Alhadhur Sayfi</p>
   </footer>
 </body>
 </html>

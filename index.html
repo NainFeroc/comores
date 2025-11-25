@@ -4,25 +4,7 @@
   <meta charset="UTF-8">
   <title>Les Comores - Sommaire</title>
   <link rel="icon" type="image/png" href="images/drapeau.png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-    body { font-family:'Poppins',sans-serif; margin:0; background:#fdfdfd; color:#333; }
-    header { background:linear-gradient(to right,#004d40,#00796b); color:white; padding:20px; text-align:center; }
-    nav ul { list-style:none; margin:0; padding:0; }
-    nav ul li { display:inline-block; margin:0 15px; }
-    nav ul li a { color:white; text-decoration:none; font-weight:600; transition:color 0.3s; }
-    nav ul li a:hover { color:#ffcc00; }
-    nav ul li.active a { border-bottom:2px solid #ffcc00; }
-    .banner { width:100%; height:300px; background:url('images/port.png') center/cover no-repeat; }
-    main { max-width:1000px; margin:auto; padding:40px; line-height:1.6; }
-    h2 { color:#004d40; margin-bottom:20px; }
-    img { max-width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2); transition:transform 0.3s; }
-    img:hover { transform:scale(1.05); }
-    table { width:100%; border-collapse:collapse; margin-top:20px; }
-    table th, table td { padding:12px; border:1px solid #ddd; }
-    table th { background:#004d40; color:white; }
-    footer { background:#2c2c2c; color:white; text-align:center; padding:15px; margin-top:40px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -36,20 +18,32 @@
     </nav>
   </header>
 
-  <div class="banner"></div>
+  <div class="banner" style="background-image:url('images/port.png');"></div>
 
   <main>
     <h2>Bienvenue</h2>
-    <p>Ce site vous invite à explorer l’histoire et la culture des Comores.</p>
+    <p>Ce site vous invite à explorer l’histoire et la culture des Comores.  
+    De la lutte pour l’indépendance aux mariages Anda, en passant par les ports et les volcans, chaque page vous plonge dans l’âme comorienne.</p>
+
+    <!-- Citation inspirante -->
+    <blockquote style="font-style:italic; color:#c62828; border-left:4px solid #fbc02d; padding-left:10px;">
+      "Les Comores sont un carrefour de cultures, une terre de mémoire et d’avenir."
+    </blockquote>
+
+    <!-- Image cliquable avec info-bulle -->
     <a href="https://fr.wikipedia.org/wiki/Comores" target="_blank">
       <img src="images/port.png" alt="Port des Comores" title="Cliquez pour découvrir plus sur Wikipédia">
     </a>
+
+    <!-- Liste -->
     <h3>Ce que vous trouverez :</h3>
     <ol>
       <li>Origines et indépendance</li>
       <li>Traditions et mariages Anda</li>
       <li>Gastronomie et paysages</li>
     </ol>
+
+    <!-- Tableau -->
     <h3>Les îles principales</h3>
     <table>
       <tr><th>Île</th><th>Capitale</th><th>Particularité</th></tr>
